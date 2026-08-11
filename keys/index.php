@@ -21,17 +21,9 @@
     <body>
         <h1>Public Keys</h1>
         <p>Directory contents for <code>/keys/</code>:</p>
-
-        <ul>
-          <?php
-          
-          $files = scandir(__DIR__);
-          foreach ($files as $file) { 
-            if ($file[0] !== '.' && $file !== 'index.php') { 
-                echo '<li><a href="' .htmlspecialchars($file) . '">' . htmlspecialchars($file) . </a></li>;
-            }
-          }
-          ?>
+        <ul> 
+            <li> <a href="id_ed25519.pub">id_ed25519.oub</a></li>
+            <li> <a href="tacr_id_ed25519.pub">tacr_id_ed25519.oub</a></li>
         </ul>
     </body>
 </html>
